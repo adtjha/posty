@@ -9,18 +9,6 @@ import { TextInput } from "react-native-gesture-handler";
 
 const Stack = createStackNavigator();
 
-const UselessTextInput = () => {
-  const [value, onChangeText] = React.useState("Useless Placeholder");
-
-  return (
-    <TextInput
-      style={{ height: 40, borderColor: "gray", borderWidth: 1 }}
-      onChangeText={(text) => onChangeText(text)}
-      value={value}
-    />
-  );
-};
-
 export default function App() {
   return (
     <NavigationContainer>
@@ -31,8 +19,7 @@ export default function App() {
           title="Login"
           options={{ headerShown: false }}
         />
-        {/* <Stack.Screen name="Posts" component={Posts} /> */}
-        <Stack.Screen name="Posts" component={UselessTextInput} />
+        <Stack.Screen name="Posts" component={Posts} />
       </Stack.Navigator>
     </NavigationContainer>
   );
