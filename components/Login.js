@@ -60,9 +60,12 @@ function Login({ navigation }) {
       Alert.alert(
         "Wrong Credentials",
         "Please enter only verified username and password.",
-        {
-          text: "OK",
-        }
+        [
+          {
+            text: "OK",
+            onPress: () => console.log("Re-enter username, password"),
+          },
+        ]
       );
     }
   };
