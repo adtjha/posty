@@ -13,12 +13,16 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "Task:\nStage1: Splash Screen for 3 sec. \nStage 2: Login screen \nStage 3: Post screen with multiple posts in text and image form. \nStage 4: react native app ",
+    "githubUrl": "https://github.com/adtjha/posty"
   }
 }

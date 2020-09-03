@@ -13,16 +13,25 @@ import {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#dfdfdf",
     alignItems: "center",
     justifyContent: "center",
   },
   item: {
+    backgroundColor: "#fff",
     padding: 4,
-    marginTop: 16,
-    marginVertical: 8,
-    marginHorizontal: 0,
+    marginVertical: 16,
+    marginHorizontal: 8,
     overflow: "hidden",
+    borderRadius: 10,
+    shadowColor: "#999",
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.2,
+    shadowRadius: 1.4,
+    elevation: 2,
   },
   image: {
     height: 240,
@@ -33,7 +42,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     padding: 10,
     marginTop: 5,
-    borderStyle: "dotted",
+    borderStyle: "solid",
     borderBottomWidth: 1,
     borderColor: "#efefef",
   },
